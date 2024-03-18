@@ -4,7 +4,7 @@ int main() {
 printf("--------------------------------\n");
 printf("            NOTA LEGAL        \n");
 printf("--------------------------------\n");
-//printf("ITEM           QTD      PRECO   \n");
+printf("ITEM           QTD      PRECO   \n");
 //printf("Banana prata     1      15,00   \n");
 //printf("Laranja       10      20,00   \n");
 //printf("Maca Fuji     6      30,00   \n");
