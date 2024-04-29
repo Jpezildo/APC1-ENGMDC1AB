@@ -1,19 +1,31 @@
 #include <stdio.h>
+#include <stdio.h>
+
 int main() {
-  int num100;
-float numero;
+  
+  float valor_bruto;
+  float valor_desconto;
+  
+  printf("Entre com o valor bruto: ");
+  
+  int deu_certo = scanf("%f", &valor_bruto);
 
-  printf("Porcentagem de desconto ");
-  int deu_certo = scanf("%i", &num100);
-
-  if ( num100 == 100.0i) {
-    printf("Entre com a porcentagem de desconto:");
-    deu_certo = scanf("%i", &num100);
-
-
-
-
-
-
-  return 0
-    }
+  if (deu_certo){
+  if (valor_bruto <= 100.0f) {
+  
+    valor_desconto = valor_bruto * 0.01f;
+ 
+  } else if (valor_bruto <= 500.0f) {
+    valor_desconto = valor_bruto * 0.05f;
+  
+  } else {
+  
+    valor_desconto = valor_bruto * 0.1f;
+  }
+  
+  printf("O valor do desconto eh %.2f\n", valor_desconto);
+  }else {
+    printf("Valor invalido. Tente novamente!\n");
+  }
+    return 0;
+}
